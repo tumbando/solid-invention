@@ -17,3 +17,10 @@ var priceRange = items.filter(function(currentItem, index, array) {
     }
 });
 //--------------------------------------------------------------------
+
+var currCodeGBP = items.filter(function(currentItem, index, array) {
+  if (currentItem.currency_code==='GBP') {
+    console.log(currentItem.title + ' ' + currentItem.currency_code);
+    }
+});
+//--------------------------------------------------------------------
