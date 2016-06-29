@@ -24,3 +24,24 @@ var currCodeGBP = items.filter(function(currentItem, index, array) {
     }
 });
 //--------------------------------------------------------------------
+
+var madeOfWood = items.filter(function(currentItem, index, array) {
+  if (currentItem.materials.indexOf('wood') !== -1) {
+    return true;
+  }
+});
+    console.log(madeOfWood);
+//--------------------------------------------------------------------
+
+var eightOrMore =  items.filter(function(currentItem, index, array){
+  if (currentItem.materials.length >= 8){
+    console.log(currentItem);
+  }
+});
+//--------------------------------------------------------------------
+var madeBySeller = items.filter(function(currentItem, index, array){
+  if (currentItem.who_made === "i_did")
+  {
+    console.log(currentItem);
+  }
+});
