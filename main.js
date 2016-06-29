@@ -4,8 +4,10 @@ var prices = items.map(function(currentItem, index, array){
 var priceSum = prices.reduce(function(a,b){
   return a+b;
 });
+var priceAvg = (priceSum/prices.length);
+console.log(priceAvg);
+//priceSum divided by number of elements in priceSum array
 
-console.log(priceSum);
 
 // var namesOnly = people.map(function(currentItem, index, array) {
 //   return currentItem.name;
