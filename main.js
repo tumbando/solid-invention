@@ -9,6 +9,11 @@ var priceSum = prices.reduce(function(a, b) {
 function priceAvg(prices) {
     return priceSum / prices.length;
 }
+
+// function renderContent(whatContent) {
+//   document.querySelector('.answerBox1 p').textContent = items[whatContent].title;
+// }
+// renderContent
 //--------------------------------------------------------------------
 var priceRange = items.filter(function(currentItem, index, array) {
     if (currentItem.price >= 14.00 && currentItem.price <= 18.00) {
@@ -35,13 +40,15 @@ var madeOfWood = items.filter(function(currentItem, index, array) {
 
 var eightOrMore =  items.filter(function(currentItem, index, array){
   if (currentItem.materials.length >= 8){
-    console.log(currentItem);
+    console.log(currentItem.title + ' ' + currentItem.materials.length + ' ' + currentItem.materials);
+
   }
 });
+
 //--------------------------------------------------------------------
 var madeBySeller = items.filter(function(currentItem, index, array){
   if (currentItem.who_made === "i_did")
   {
-    console.log(currentItem);
+    console.log(currentItem.title);
   }
 });
